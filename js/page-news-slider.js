@@ -1,0 +1,1 @@
+$(".newsp-slider").slick({slidesToShow:4,arrows:!0,slidesToScroll:1,autoplay:!0,autoplaySpeed:2e3,responsive:[{breakpoint:1250,settings:{slidesToShow:3}},{breakpoint:768,settings:{slidesToShow:2}},{breakpoint:480,settings:{slidesToShow:1}}]}),$('[data-fancybox="gallery"]').fancybox({});
