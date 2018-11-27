@@ -18,6 +18,7 @@
     <!-- My CSS -->
     <link rel="stylesheet" type="text/css" href="accaunt-nav.css">
     <link rel="stylesheet" type="text/css" href="account-offer-add.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="main.css">
 
   </head>
@@ -1550,11 +1551,23 @@
 
       <!-- My JS -->
       <script src="js/common.js"></script>
+            <script src="js/accaunt-offer-navigation.js"></script>
+      <script src="js/jquery-ui.js"></script>
+
+      <script>
+      $( function() {
+        if ( $('[type="date"]').prop('type') != 'date' ) {
+            $('[type="date"]').datepicker();
+            $('[type="date"]').val('11/20/2018');
+
+        }
+      } );
+      </script>
 
       <!-- My JS -->
       <script src="js/office-offer-chebox.js"></script>
       <script src="js/modernizr.min.js"></script>
-      <script src="js/accaunt-offer-navigation.js"></script>
 
+ 
   </body>
 </html>
