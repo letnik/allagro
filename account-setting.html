@@ -146,19 +146,22 @@
                   <form>
                     <div class="setting-list d-flex jc-between f-wrap">
                       <div class="setting-item small">
-                        <label for="setting-surname" class="setting-label">Фамілія <span>*</span></label>
-                        <input id="setting-surname" type="text" class="setting-input">
+                        <label for="setting-surname" class="setting-label">Прізвище <span>*</span></label>
+                        <input id="setting-surname" type="text" class="setting-input" required>
+                        <div class="setting-error">Обов'язкове поле</div>
                       </div>
                       <div class="setting-item small">
                         <label for="setting-name" class="setting-label">Ім’я <span>*</span></label>
-                        <input id="setting-name" type="text" class="setting-input">
+                        <input id="setting-name" type="text" class="setting-input" required>
+                        <div class="setting-error">Обов'язкове поле</div>
                       </div>
                       <div class="setting-item small">
                         <label for="setting-patronymic" class="setting-label">По батькові <span>*</span></label>
-                        <input id="setting-patronymic" type="text" class="setting-input">
+                        <input id="setting-patronymic" type="text" class="setting-input" required>
+                        <div class="setting-error">Обов'язкове поле</div>
                       </div>
                       <div class="setting-item small">
-                        <label for="setting-sex" class="setting-label">Стать</label>
+                        <label for="setting-sex" class="setting-label">Стать <span>*</span></label>
                         <span class="select-wrap long rel">
                           <select id="setting-sex" class="setting-select long" required >
                             <option hidden disabled selected>не вибрано</option>
@@ -167,6 +170,7 @@
                           </select>
                           <div class="select__arrow"></div>
                         </span>
+                        <div class="setting-error">Обов'язкове поле</div>
                       </div>
                       <div class="setting-item small">
                         <label for="setting-birth" class="setting-label">Дата народження</label>
@@ -209,7 +213,8 @@
                       </div>
                       <div class="setting-item small">
                         <label for="setting-phone" class="setting-label">Телефон <span>*</span></label>
-                        <input id="setting-phone" type="text" class="setting-input">
+                        <input id="setting-phone" type="text" class="setting-input" required>
+                        <div class="setting-error">Обов'язкове поле</div>
                       </div>
                       <div class="setting-item small">
                         <label for="setting-icq" class="setting-label">ICQ</label>
@@ -222,7 +227,7 @@
                     </div>
                     <div class="setting-footer d-flex jc-between ai-center">
                       <div class="setting-item small">
-                        <span class="footnote"><span>*</span> обв’язкові поля</span>
+                        <span class="footnote"> <span>*</span> обв’язкові поля</span>
                       </div>
                       <div class="setting-item small">
                         <button class="btn btn-green">Зберегти</button>
@@ -248,21 +253,26 @@
                   <form>
                     <div class="setting-list d-flex jc-between f-wrap">
                       <div class="setting-item long">
-                        <label for="setting-mail" class="setting-label">Поточний e-mail<span>*</span></label>
-                        <input id="setting-mail" type="text" class="setting-input">
+                        <label for="setting-mail" class="setting-label">Поточний e-mail <span>*</span></label>
+                        <input id="setting-mail" type="text" class="setting-input" required>
+                        <div class="setting-error">Обов'язкове поле</div>
+                        <div class="setting-error">Введений неправильной e-mail</div>
                       </div>
                       <div class="setting-item small">
-                        <label for="setting-mail-new" class="setting-label">Новий e-mail<span>*</span></label>
-                        <input id="setting-mail-new" type="text" class="setting-input">
+                        <label for="setting-mail-new" class="setting-label">Новий e-mail <span>*</span></label>
+                        <input id="setting-mail-new" type="text" class="setting-input" required>
+                        <div class="setting-error">Обов'язкове поле</div>
+                        <div class="setting-error">Введені e-mail не співпадають</div>
                       </div>
                       <div class="setting-item small">
-                        <label for="setting-mail-repeat" class="setting-label">Повторити новий e-mail<span>*</span></label>
-                        <input id="setting-mail-repeat" type="text" class="setting-input">
+                        <label for="setting-mail-repeat" class="setting-label">Повторити новий e-mail <span>*</span></label>
+                        <input id="setting-mail-repeat" type="text" class="setting-input" required>
+                        <div class="setting-error">Обов'язкове поле</div>
                       </div>
                     </div>
                     <div class="setting-footer d-flex jc-between ai-center">
                       <div class="setting-item small">
-                        <span class="footnote"><span>*</span> обв’язкові поля</span>
+                        <span class="footnote"> <span>*</span> обв’язкові поля</span>
                       </div>
                       <div class="setting-item small">
                         <button class="btn btn-green">Зберегти</button>
@@ -289,16 +299,21 @@
                   <form>
                     <div class="setting-list d-flex jc-between f-wrap">
                       <div class="setting-item long">
-                        <label for="setting-pass" class="setting-label">Поточний  пароль<span>*</span></label>
-                        <input id="setting-pass" type="text" class="setting-input">
+                        <label for="setting-pass" class="setting-label">Поточний  пароль <span>*</span></label>
+                        <input id="setting-pass" type="text" class="setting-input" required>
+                        <div class="setting-error">Обов'язкове поле</div>
+                        <div class="setting-error">Введено неправильной пароль</div>
                       </div>
                       <div class="setting-item small">
-                        <label for="setting-pass-new" class="setting-label">Новий пароль<span>*</span></label>
-                        <input id="setting-pass-new" type="text" class="setting-input">
+                        <label for="setting-pass-new" class="setting-label">Новий пароль <span>*</span></label>
+                        <input id="setting-pass-new" type="text" class="setting-input" required>
+                        <div class="setting-error">Обов'язкове поле</div>
+                        <div class="setting-error">Введені паролі не співпадають</div>
                       </div>
                       <div class="setting-item small">
-                        <label for="setting-pass-repeat" class="setting-label">Повторити новий пароль<span>*</span></label>
-                        <input id="setting-pass-repeat" type="text" class="setting-input">
+                        <label for="setting-pass-repeat" class="setting-label">Повторити новий пароль <span>*</span></label>
+                        <input id="setting-pass-repeat" type="text" class="setting-input" required>
+                        <div class="setting-error">Обов'язкове поле</div>
                       </div>
                       <div class="setting-item small d-flex ai-center">
                         <div class="setting-checkbox">
@@ -309,7 +324,7 @@
                     </div>
                     <div class="setting-footer d-flex jc-between ai-center">
                       <div class="setting-item small">
-                        <span class="footnote"><span>*</span> обв’язкові поля</span>
+                        <span class="footnote"> <span>*</span> обв’язкові поля</span>
                       </div>
                       <div class="setting-item small">
                         <button class="btn btn-green">Зберегти</button>
@@ -336,13 +351,15 @@
                   <form>
                     <div class="setting-list d-flex jc-between f-wrap">
                       <div class="setting-item small">
-                        <label for="setting-remove-account" class="setting-label">Пароль<span>*</span></label>
-                        <input id="setting-remove-account" type="text" class="setting-input">
+                        <label for="setting-remove-account" class="setting-label">Пароль <span>*</span></label>
+                        <input id="setting-remove-account" type="text" class="setting-input" required>
+                        <div class="setting-error">Обов'язкове поле</div>
+                        <div class="setting-error">Введено неправильной пароль</div>
                       </div>
                     </div>
                     <div class="setting-footer d-flex jc-between ai-center">
                       <div class="setting-item small">
-                        <span class="footnote"><span>*</span> обв’язкові поля</span>
+                        <span class="footnote"> <span>*</span> обв’язкові поля</span>
                       </div>
                       <div class="setting-item small">
                         <button class="btn btn-green">Видалити акаунт</button>
