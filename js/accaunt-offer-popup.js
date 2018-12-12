@@ -1,0 +1,1 @@
+$(function(){$(".details-btn").click(function(){$(".popup-details").fadeIn()})}),$(function(){$(".popup-details-close").click(function(){$(".popup-details").fadeOut()})});
