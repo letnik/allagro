@@ -1058,13 +1058,21 @@
                     <label for="password"><i class="icon-lock-solid abs tty"></i></label>
                     <input type="password" name="password" placeholder="Пароль" class="input" id="password">
                   </div>
+
+                  <div class="popup-errors">
+
+                    <p><i class="icon-exclamation-triangle"></i><font class="errortext">Поле "Адреса e-mail" обов'язкове для заповнення<br>Поле "Підтвердження пароля" обов'язкове для заповнення</font></p>
+
+                  </div>
+
+
                   <div class="input-wrapper">
                     <button type="submit" class="btn-big btn-green">Увійти</button>
                   </div>
                   
                   <div class="input-wrapper d-flex jc-between ai-center">
-                    <div class="d-flex ai-center">
-                      <input type="checkbox" name="password" id="popup-user-login-checkbox" placeholder="Пароль"><label for="popup-user-login-checkbox">запам'ятати</i></label>
+                    <div class="popup-checkbox d-flex ai-center">
+                      <span class="squared-input"><input id="checkbox-1" type="checkbox" name="check"><label for="checkbox-1"></span>запам'ятати</i></label>
                     </div>
                     <p href="#" class="popup-recover-link fz-14">Забули пароль?</p>
                   </div>
@@ -1073,10 +1081,16 @@
                   <span class="popup-or rel">або</span>
                   <ul class="social-list d-flex jc-center">
                     <li class="social-item">
-                      <button href="#" class="social-link icon-facebook"></button>
+                      <a href="#" class="social-link icon-facebook"></a>
                     </li>
                     <li class="social-item">
-                      <button href="#" class="social-link icon-google-plus"></button>
+                      <a href="#" class="social-link icon-google-plus"></a>
+                    </li>
+                    <li class="social-item">
+                      <a href="#" class="social-link icon-bitrix_24"></a>
+                    </li>
+                    <li class="social-item">
+                      <a href="#" class="social-link icon-office-365"></a>
                     </li>
                   </ul>
                 </div>
@@ -1095,13 +1109,20 @@
                     <label for="new-password"><i class="icon-lock-solid abs tty"></i></label>
                     <input type="password" name="password" placeholder="Пароль" class="input" id="new-password">
                   </div>
+
+                  <div class="popup-errors">
+
+                    <p><i class="icon-exclamation-triangle"></i><font class="errortext">Поле "Адреса e-mail" обов'язкове для заповнення<br>Поле "Підтвердження пароля" обов'язкове для заповнення</font></p>
+
+                  </div>
+                  
                   <div class="input-wrapper">
                     <button type="submit" class="btn-big btn-green">Зареєструватись</button>
                   </div>
                   
                   <div class="input-wrapper d-flex jc-between ai-center">
-                    <div class="d-flex ai-start">
-                      <input type="checkbox" name="password" id="popup-user-reg-checkbox" placeholder="Пароль"><label for="popup-user-reg-checkbox"> Створивши обліковий запис, погоджуюсь з <a href="#" class="popup-reg-info fz-14">првилами сайту</a></i></label>
+                    <div class="popup-checkbox d-flex ai-start">
+                      <span class="squared-input"><input id="checkbox-2" type="checkbox" name="check"><label for="checkbox-2"></label></span><span>Створивши обліковий запис, погоджуюсь з <a href="#" class="popup-reg-info fz-14">првилами сайту</a></span>
                     </div>
                    
                   </div>
@@ -1110,10 +1131,16 @@
                   <span class="popup-or rel">або</span>
                   <ul class="social-list d-flex jc-center">
                     <li class="social-item">
-                      <button href="#" class="social-link icon-facebook"></button>
+                      <a href="#" class="social-link icon-facebook"></a>
                     </li>
                     <li class="social-item">
-                      <button href="#" class="social-link icon-google-plus"></button>
+                      <a href="#" class="social-link icon-google-plus"></a>
+                    </li>
+                    <li class="social-item">
+                      <a href="#" class="social-link icon-bitrix_24"></a>
+                    </li>
+                    <li class="social-item">
+                      <a href="#" class="social-link icon-office-365"></a>
                     </li>
                   </ul>
                 </div>
@@ -1122,6 +1149,7 @@
           </div>
 
         </div>
+        <div class="popup-close-bg"></div>
       </div>
     </div>
 
