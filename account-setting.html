@@ -172,45 +172,16 @@
                         </span>
                         <div class="setting-error">Обов'язкове поле</div>
                       </div>
+
+
                       <div class="setting-item small">
-                        <label for="setting-birth" class="setting-label">Дата народження</label>
-                        <div class="d-flex jc-between f-wrap-md">
-                          <span class="select-wrap rel setting-birth-day">
-                            <select id="setting-birth-day" class="setting-select">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                              <option>6</option>
-                              <option>7</option>
-                              <option>8</option>
-                              <option>9</option>
-                            </select>
-                            <div class="select__arrow"></div>
-                          </span>
-                          <span class="select-wrap rel setting-birth-month">
-                            <select id="setting-birth-month" class="setting-select">
-                              <option>січень</option>
-                              <option>лютий</option>
-                              <option>березень</option>
-                              <option>квітень</option>
-                            </select>
-                            <div class="select__arrow"></div>
-                          </span>
-                          <span class="select-wrap rel setting-birth-year">
-                            <select id="setting-birth-year" class="setting-select">
-                              <option>1987</option>
-                              <option>1986</option>
-                              <option>1985</option>
-                              <option>1984</option>
-                              <option>1983</option>
-                              <option>1982</option>
-                            </select>
-                            <div class="select__arrow"></div>
-                          </span>
+                        <label for="setting-birth" class="setting-label">Дата народження (DD.MM.YYYY):</label>
+                        <div class="rel">
+                          <input type="text" id="PERSONAL_BIRTHDAY" class="setting-input" name="PERSONAL_BIRTHDAY" value=""><img src="img/_tmp/calendar-alt-regular.svg" alt="Вибрати дату в календарі" class="calendar-icon" onclick="BX.calendar({node:this, field:'PERSONAL_BIRTHDAY', form: 'form1', bTime: false, currentTime: '1552989297', bHideTime: false});" onmouseover="BX.addClass(this, 'calendar-icon-hover');" onmouseout="BX.removeClass(this, 'calendar-icon-hover');" border="0">
                         </div>
                       </div>
+
+
                       <div class="setting-item small">
                         <label for="setting-phone" class="setting-label">Телефон <span>*</span></label>
                         <input id="setting-phone" type="text" class="setting-input" required>
