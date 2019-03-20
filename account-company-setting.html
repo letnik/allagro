@@ -19,7 +19,7 @@
     <link rel="stylesheet" type="text/css" href="accaunt-nav.css">
     <link rel="stylesheet" type="text/css" href="account-company-setting.css">
     <link rel="stylesheet" type="text/css" href="main.css">
-
+    <link rel="stylesheet" type="text/css" href="popup-login.css">
 
   </head>
   <body id="home">
@@ -114,16 +114,16 @@
               <nav class="account-nav-setting">
                 <ul class="account-nav-list tabs arrow">
                   <li class="account-nav-item active">
-                    <a href="#setting_1" class="account-nav-link d-flex ai-center"><i class="icon-setting"></i>Про компанію</a>
+                    <a href="#setting_1" class="account-nav-link d-flex ai-center"><i class="icon-home"></i>Про компанію</a>
                   </li>
                   <li class="account-nav-item">
-                    <a href="#setting_2" class="account-nav-link d-flex ai-center"><i class="icon-setting-email"></i>Контакти</a>
+                    <a href="#setting_2" class="account-nav-link d-flex ai-center"><i class="icon-sing"></i>Контакти</a>
                   </li>
                   <li class="account-nav-item">
-                    <a href="#setting_3" class="account-nav-link d-flex ai-center"><i class="icon-lock"></i>Логотип</a>
+                    <a href="#setting_3" class="account-nav-link d-flex ai-center"><i class="icon-logo"></i>Логотип</a>
                   </li>
                   <li class="account-nav-item">
-                    <a href="#setting_4" class="account-nav-link d-flex ai-center"><i class="icon-cart"></i>Фото галерея</a>
+                    <a href="#setting_4" class="account-nav-link d-flex ai-center"><i class="icon-photo"></i>Фото галерея</a>
                   </li>
                 </ul>
               </nav>
@@ -134,91 +134,98 @@
 
           <section id="setting_1" class="tab-cont">
             <div class="account-header">
-              <h2 class="aside-title">Персональна інформація</h2>
+              <h2 class="aside-title">Про компанію</h2>
             </div>
-            <div class="account-setting">
+            <div class="account-company-setting">
 
               <div class="account-tab-cont">
                 <div class="setting-header centro">
-                  <h3 class="setting-title">Налаштування акаунта</h3>
+                  <h3 class="setting-title">Компанії, які додали  опис, мають вищий пріоритет для відображення в каталогах.</h3>
                 </div>
                 <div class="setting-options">
                   <form>
                     <div class="setting-list d-flex jc-between f-wrap">
                       <div class="setting-item small">
-                        <label for="setting-surname" class="setting-label">Фамілія <span>*</span></label>
-                        <input id="setting-surname" type="text" class="setting-input">
+                        <label for="setting-fop" class="setting-label">Назва компанії або ФОП <span>*</span></label>
+                        <input id="setting-fop" type="text" class="setting-input">
                       </div>
                       <div class="setting-item small">
-                        <label for="setting-name" class="setting-label">Ім’я <span>*</span></label>
-                        <input id="setting-name" type="text" class="setting-input">
+                        <label for="setting-edrpou" class="setting-label">Код ЄДРПОУ <span>*</span></label>
+                        <input id="setting-edrpou" type="text" class="setting-input">
                       </div>
-                      <div class="setting-item small">
-                        <label for="setting-patronymic" class="setting-label">По батькові <span>*</span></label>
-                        <input id="setting-patronymic" type="text" class="setting-input">
-                      </div>
-                      <div class="setting-item small">
-                        <label for="setting-sex" class="setting-label">Стать</label>
-                        <span class="select-wrap long rel">
-                          <select id="setting-sex" class="setting-select long" required >
-                            <option hidden disabled selected>не вибрано</option>
-                            <option>чоловіча</option>
-                            <option>жіноча</option>
-                          </select>
-                          <div class="select__arrow"></div>
-                        </span>
-                      </div>
-                      <div class="setting-item small">
-                        <label for="setting-birth" class="setting-label">Дата народження</label>
-                        <div class="d-flex jc-between f-wrap-md">
-                          <span class="select-wrap rel setting-birth-day">
-                            <select id="setting-birth-day" class="setting-select">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                              <option>6</option>
-                              <option>7</option>
-                              <option>8</option>
-                              <option>9</option>
-                            </select>
-                            <div class="select__arrow"></div>
-                          </span>
-                          <span class="select-wrap rel setting-birth-month">
-                            <select id="setting-birth-month" class="setting-select">
-                              <option>січень</option>
-                              <option>лютий</option>
-                              <option>березень</option>
-                              <option>квітень</option>
-                            </select>
-                            <div class="select__arrow"></div>
-                          </span>
-                          <span class="select-wrap rel setting-birth-year">
-                            <select id="setting-birth-year" class="setting-select">
-                              <option>1987</option>
-                              <option>1986</option>
-                              <option>1985</option>
-                              <option>1984</option>
-                              <option>1983</option>
-                              <option>1982</option>
-                            </select>
-                            <div class="select__arrow"></div>
-                          </span>
+
+                      <div class="setting-item long">
+                        <div class="setting-label">Вид діяльності <span>*</span></div>
+                        <div class="setting-checkbox-wrap">
+
+                          <div class="setting-checkbox-title">Виберіть вид діядьності</div>
+
+                          <div class="setting-checkbox-option d-flex f-wrap">
+                            <div class="setting-item small d-flex ai-center jc-start">
+                              <div class="squared-input">
+                                <input type="checkbox" id="company-setting-checkbox-01" name="company-setting-checkbox-01"> <label for="company-setting-checkbox-01"></label>
+                              </div>
+                              <span class="setting-checkboxspan">Виробництво запчастин</span>
+                            </div>
+                            <div class="setting-item small d-flex ai-center jc-start">
+                              <div class="squared-input">
+                                <input type="checkbox" id="company-setting-checkbox-02" name="company-setting-checkbox-02"> <label for="company-setting-checkbox-02"></label>
+                              </div>
+                              <span class="setting-checkboxspan">Виробництво добрив</span>
+                            </div>
+                            <div class="setting-item small d-flex ai-center jc-start">
+                              <div class="squared-input">
+                                <input type="checkbox" id="company-setting-checkbox-03" name="company-setting-checkbox-03"> <label for="company-setting-checkbox-03"></label>
+                              </div>
+                              <span class="setting-checkboxspan">Виробництво кормів/преміксів</span>
+                            </div>
+                            <div class="setting-item small d-flex ai-center jc-start">
+                              <div class="squared-input">
+                                <input type="checkbox" id="company-setting-checkbox-04" name="company-setting-checkbox-04"> <label for="company-setting-checkbox-04"></label>
+                              </div>
+                              <span class="setting-checkboxspan">Послуги будівництва</span>
+                            </div>
+                            <div class="setting-item small d-flex ai-center jc-start">
+                              <div class="squared-input">
+                                <input type="checkbox" id="company-setting-checkbox-05" name="company-setting-checkbox-05"> <label for="company-setting-checkbox-05"></label>
+                              </div>
+                              <span class="setting-checkboxspan">Вирощування с/г продукції</span>
+                            </div>
+                            <div class="setting-item small d-flex ai-center jc-start">
+                              <div class="squared-input">
+                                <input type="checkbox" id="company-setting-checkbox-06" name="company-setting-checkbox-06"> <label for="company-setting-checkbox-06"></label>
+                              </div>
+                              <span class="setting-checkboxspan">Продаж техніки</span>
+                            </div>
+                            <div class="setting-item small d-flex ai-center jc-start">
+                              <div class="squared-input">
+                                <input type="checkbox" id="company-setting-checkbox-07" name="company-setting-checkbox-07"> <label for="company-setting-checkbox-07"></label>
+                              </div>
+                              <span class="setting-checkboxspan">Виробництво кормів/преміксів</span>
+                            </div>
+                            <div class="setting-item small d-flex ai-center jc-start">
+                              <div class="squared-input">
+                                <input type="checkbox" id="company-setting-checkbox-08" name="company-setting-checkbox-08"> <label for="company-setting-checkbox-08"></label>
+                              </div>
+                              <span class="setting-checkboxspan">Послуги будівництва</span>
+                            </div>
+                            <div class="setting-item small d-flex ai-center jc-start">
+                              <div class="squared-input">
+                                <input type="checkbox" id="company-setting-checkbox-09" name="company-setting-checkbox-09"> <label for="company-setting-checkbox-09"></label>
+                              </div>
+                              <span class="setting-checkboxspan">інше</span>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <div class="setting-item small">
-                        <label for="setting-phone" class="setting-label">Телефон <span>*</span></label>
-                        <input id="setting-phone" type="text" class="setting-input">
+
+                      <div class="setting-item long">
+                        <div class="setting-label">Опис про компанію</div>
+
+
                       </div>
-                      <div class="setting-item small">
-                        <label for="setting-icq" class="setting-label">ICQ</label>
-                        <input id="setting-icq" type="text" class="setting-input">
-                      </div>
-                      <div class="setting-item small">
-                        <label for="setting-skype" class="setting-label">Skype</label>
-                        <input id="setting-skype" type="text" class="setting-input">
-                      </div>
+
+
                     </div>
                     <div class="setting-footer d-flex jc-between ai-center">
                       <div class="setting-item small">
@@ -236,28 +243,42 @@
           </section>
           <section id="setting_2" class="tab-cont hidden">
             <div class="account-header">
-              <h2 class="aside-title">Змінити e-mail</h2>
+              <h2 class="aside-title">Контакти</h2>
             </div>
-            <div class="account-setting">
+            <div class="account-company-setting">
 
               <div class="account-tab-cont">
                 <div class="setting-header centro">
-                  <h3 class="setting-title">Вкажіть новий адрес електронної пошти</h3>
+                  <h3 class="setting-title">Компанії, які додали  свої контакти , мають вищий пріоритет для відображення в каталогах.</h3>
                 </div>
                 <div class="setting-options">
                   <form>
                     <div class="setting-list d-flex jc-between f-wrap">
-                      <div class="setting-item long">
-                        <label for="setting-mail" class="setting-label">Поточний e-mail<span>*</span></label>
-                        <input id="setting-mail" type="text" class="setting-input">
+                      <div class="setting-item small">
+                        <label for="setting-phone" class="setting-label">Телефон <span>*</span></label>
+                        <input id="setting-phone" type="text" class="setting-input">
                       </div>
                       <div class="setting-item small">
-                        <label for="setting-mail-new" class="setting-label">Новий e-mail<span>*</span></label>
-                        <input id="setting-mail-new" type="text" class="setting-input">
-                      </div>
-                      <div class="setting-item small">
-                        <label for="setting-mail-repeat" class="setting-label">Повторити новий e-mail<span>*</span></label>
+                        <label for="setting-mail" class="setting-label">E-mail <span>*</span></label>
                         <input id="setting-mail-repeat" type="text" class="setting-input">
+                      </div>
+                      <div class="setting-item small">
+                        <label for="setting-mail" class="setting-label">Веб сайт</label>
+                        <input id="setting-mail-repeat" type="text" class="setting-input">
+                      </div>
+                      <div class="setting-item small">
+                        <label for="setting-facebook" class="setting-label">Facebook</label>
+                        <input id="setting-facebook" type="text" class="setting-input">
+                      </div>
+                      <div class="setting-item small">
+                        <label for="setting-googe" class="setting-label">Googe +</label>
+                        <input id="setting-googe" type="text" class="setting-input">
+                      </div>
+                      <div class="setting-item long">
+                        <div class="setting-label">Адреса та місцезнаходження на карті (перемістіть маркер для точного визначення адреси) <span>*</span></div>
+                        <div class="setting-map">
+                          < GOOGLE MAP >
+                        </div>
                       </div>
                     </div>
                     <div class="setting-footer d-flex jc-between ai-center">
@@ -277,35 +298,32 @@
 
           <section id="setting_3" class="tab-cont hidden">
             <div class="account-header">
-              <h2 class="aside-title">Змінити пароль</h2>
+              <h2 class="aside-title">Логотип</h2>
             </div>
-            <div class="account-setting">
+            <div class="account-company-setting">
 
               <div class="account-tab-cont">
                 <div class="setting-header centro">
-                  <h3 class="setting-title">Щоб пароль був надійним він повинен складатися як мінімум з шести символів</h3>
+                  <h3 class="setting-title">Компанії, які додали свій логотип, мають вищий пріоритет для відображення в каталогах.</h3>
                 </div>
                 <div class="setting-options">
                   <form>
                     <div class="setting-list d-flex jc-between f-wrap">
-                      <div class="setting-item long">
-                        <label for="setting-pass" class="setting-label">Поточний  пароль<span>*</span></label>
-                        <input id="setting-pass" type="text" class="setting-input">
-                      </div>
+
                       <div class="setting-item small">
-                        <label for="setting-pass-new" class="setting-label">Новий пароль<span>*</span></label>
-                        <input id="setting-pass-new" type="text" class="setting-input">
-                      </div>
-                      <div class="setting-item small">
-                        <label for="setting-pass-repeat" class="setting-label">Повторити новий пароль<span>*</span></label>
-                        <input id="setting-pass-repeat" type="text" class="setting-input">
-                      </div>
-                      <div class="setting-item small d-flex ai-center">
-                        <div class="setting-checkbox">
-                          <input type="checkbox" id="setting-pass-checkbox" name="setting-pass-checkbox"> <label for="setting-pass-checkbox"></label>
+                        <div class="setting-label">Логотип компанії</div>
+                        <div class="setting-img-box rel">
+                          <img src="img/_tmp/partner-5.png" alt="#">
+                          <button class="setting-remove abs f-center"><i class="icon-close"></i></button>
                         </div>
-                        <span class="setting-checkboxspan">показувати паролі</span>
                       </div>
+                      <div class="setting-item small">
+                        <div class="setting-label">Завантажити логотип (формат jpeg, gif, png)</div>
+                        <div class="">
+                          <input class="setting-input" type="file" name="photo" multiple accept="image/*,image/jpeg">
+                        </div>
+                      </div>
+
                     </div>
                     <div class="setting-footer d-flex jc-between ai-center">
                       <div class="setting-item small">
@@ -324,28 +342,67 @@
 
           <section id="setting_4" class="tab-cont hidden">
             <div class="account-header">
-              <h2 class="aside-title">видалити аккаунт</h2>
+              <h2 class="aside-title">Фото галерея</h2>
             </div>
-            <div class="account-setting">
+            <div class="account-company-setting">
 
               <div class="account-tab-cont">
                 <div class="setting-header centro">
-                  <h3 class="setting-title">Щоб видалити аккаунт ведіть пароль</h3>
+                  <h3 class="setting-title">Компанії, які додали фото , мають вищий пріоритет для відображення в каталогах.</h3>
                 </div>
                 <div class="setting-options">
                   <form>
-                    <div class="setting-list d-flex jc-between f-wrap">
-                      <div class="setting-item small">
-                        <label for="setting-remove-account" class="setting-label">Пароль<span>*</span></label>
-                        <input id="setting-remove-account" type="text" class="setting-input">
+                    <div class="setting-list d-flex f-wrap">
+                      <div class="setting-item setting-item-img">
+                        <div class="rel">
+                          <img src="img/_tmp/Rectangle 49.2.png" alt="#">
+                          <button class="setting-remove abs f-center"><i class="icon-close"></i></button>
+                        </div>
                       </div>
+                      <div class="setting-item setting-item-img">
+                        <div class="rel">
+                          <img src="img/_tmp/Rectangle 49.3.png" alt="#">
+                          <button class="setting-remove abs f-center"><i class="icon-close"></i></button>
+                        </div>
+                      </div>
+                      <div class="setting-item setting-item-img">
+                        <div class="rel">
+                          <img src="img/_tmp/Rectangle 49.4.png" alt="#">
+                          <button class="setting-remove abs f-center"><i class="icon-close"></i></button>
+                        </div>
+                      </div>
+                      <div class="setting-item setting-item-img">
+                        <div class="rel">
+                          <img src="img/_tmp/Rectangle 49.15.png" alt="#">
+                          <button class="setting-remove abs f-center"><i class="icon-close"></i></button>
+                        </div>
+                      </div>
+                      <div class="setting-item setting-item-img">
+                        <div class="rel">
+                          <img src="img/_tmp/banner-top-slide-1.png" alt="#">
+                          <button class="setting-remove abs f-center"><i class="icon-close"></i></button>
+                        </div>
+                      </div>
+                      <div class="setting-item setting-item-img">
+                        <div class="rel">
+                          <img src="img/_tmp/banner-top-slide-2.png" alt="#">
+                          <button class="setting-remove abs f-center"><i class="icon-close"></i></button>
+                        </div>
+                      </div>
+                      <div class="setting-item setting-item-img">
+                        <div class="rel">
+                          <img src="img/_tmp/banner-top-slide-3.png" alt="#">
+                          <button class="setting-remove abs f-center"><i class="icon-close"></i></button>
+                        </div>
+                      </div>
+
                     </div>
                     <div class="setting-footer d-flex jc-between ai-center">
                       <div class="setting-item small">
-                        <span class="footnote"><span>*</span> обв’язкові поля</span>
+                        <input class="setting-input" type="file" name="photo" multiple accept="image/*,image/jpeg">
                       </div>
                       <div class="setting-item small">
-                        <button class="btn btn-green">Видалити акаунт</button>
+                        <button class="btn btn-green">Завантажити фото</button>
                       </div>
                     </div>
                   </form>
@@ -407,6 +464,158 @@
 
     </footer>
 
+
+
+<div class="popup popup-user-login">
+      <div class="popup-wrapper d-flex jc-center ai-center ai-start-sm">
+        <div class="popup-content rel">
+          <div class="tab-wrap">
+            <div class="popup-tab-list tabs d-flex rel">
+              <div class="popup-tab-item active">
+                <a href="#tab_1" class="popup-tab-link">
+                  Авторизція
+                </a>
+              </div>
+              <span>/</span>
+              <div class="popup-tab-item">
+                <a href="#tab_2" class="popup-tab-link">
+                  Реєстрація
+                </a>
+              </div>
+              <i class="icon-close popup-login-close abs"></i>
+            </div>
+
+            <div class="box-tab-cont popup-tab-cont">
+              <div class="tab-cont" id="tab_1">
+                <form>
+                  <div class="input-wrapper rel">
+                    <label for="login"><i class="icon-user abs tty"></i></label>
+                    <input type="text" name="login" placeholder="Логін" class="input" id="login">
+                  </div>
+                  <div class="input-wrapper rel">
+                    <label for="password"><i class="icon-lock-solid abs tty"></i></label>
+                    <input type="password" name="password" placeholder="Пароль" class="input" id="password">
+                  </div>
+
+                  <div class="popup-errors">
+
+                    <p><i class="icon-exclamation-triangle"></i><font class="errortext">Поле "Адреса e-mail" обов'язкове для заповнення<br>Поле "Підтвердження пароля" обов'язкове для заповнення</font></p>
+
+                  </div>
+
+
+                  <div class="input-wrapper">
+                    <button type="submit" class="btn-big btn-green">Увійти</button>
+                  </div>
+                  
+                  <div class="input-wrapper d-flex jc-between ai-center">
+                    <div class="popup-checkbox d-flex ai-center">
+                      <span class="squared-input"><input id="checkbox-1" type="checkbox" name="check"><label for="checkbox-1"></span>запам'ятати</i></label>
+                    </div>
+                    <p href="#" class="popup-recover-link fz-14">Забули пароль?</p>
+                  </div>
+                </form>
+                <div class="popup-login-social">
+                  <span class="popup-or rel">або</span>
+                  <ul class="social-list d-flex jc-center">
+                    <li class="social-item">
+                      <a href="#" class="social-link icon-facebook"></a>
+                    </li>
+                    <li class="social-item">
+                      <a href="#" class="social-link icon-google"></a>
+                    </li>
+                    <li class="social-item">
+                      <a href="#" class="social-link icon-bitrix24"></a>
+                    </li>
+                    <li class="social-item">
+                      <a href="#" class="social-link icon-drobox"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tab-cont hidden" id="tab_2">
+                <form>
+                  <div class="input-wrapper rel">
+                    <label for="mail"><i class="icon-at-solid abs tty"></i></label>
+                    <input type="email" name="mail" placeholder="Email" class="input" id="mail">
+                  </div>
+                  <div class="input-wrapper rel">
+                    <label for="new-login"><i class="icon-user abs tty"></i></label>
+                    <input type="text" name="login" placeholder="Логін" class="input" id="new-login">
+                  </div>
+                  <div class="input-wrapper rel">
+                    <label for="new-password"><i class="icon-lock-solid abs tty"></i></label>
+                    <input type="password" name="password" placeholder="Пароль" class="input" id="new-password">
+                  </div>
+
+                  <div class="popup-errors">
+
+                    <p><i class="icon-exclamation-triangle"></i><font class="errortext">Поле "Адреса e-mail" обов'язкове для заповнення<br>Поле "Підтвердження пароля" обов'язкове для заповнення</font></p>
+
+                  </div>
+                  
+                  <div class="input-wrapper">
+                    <button type="submit" class="btn-big btn-green">Зареєструватись</button>
+                  </div>
+                  
+                  <div class="input-wrapper d-flex jc-between ai-center">
+                    <div class="popup-checkbox d-flex ai-start">
+                      <span class="squared-input"><input id="checkbox-2" type="checkbox" name="check"><label for="checkbox-2"></label></span><span>Створивши обліковий запис, погоджуюсь з <a href="#" class="popup-reg-info fz-14">првилами сайту</a></span>
+                    </div>
+                   
+                  </div>
+                </form>
+                <div class="popup-login-social">
+                  <span class="popup-or rel">або</span>
+                  <ul class="social-list d-flex jc-center">
+                    <li class="social-item">
+                      <a href="#" class="social-link icon-facebook"></a>
+                    </li>
+                    <li class="social-item">
+                      <a href="#" class="social-link icon-google"></a>
+                    </li>
+                    <li class="social-item">
+                      <a href="#" class="social-link icon-bitrix24"></a>
+                    </li>
+                    <li class="social-item">
+                      <a href="#" class="social-link icon-office365"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="popup-close-bg"></div>
+      </div>
+    </div>
+
+    <div class="popup popup-recover">
+      <div class="popup-wrapper d-flex jc-center ai-center ai-start-sm">
+        <div class="popup-content">
+          <div class="popup-content-wrapper rel">
+            <i class="icon-close popup-recover-close abs"></i>
+            <form>
+
+              <h3 class="form-title centro">Відновлення паролю</h3>
+              <p class="centro">Введіть ваш логін або email, щоб отримати на email лист з посиланням для створення нового пароля.</p>
+
+              <div class="input-wrapper rel">
+                <input type="text" name="name" placeholder="Логін/пароль" class="input" id="send-login-pass">
+                <label for="send-login-pass"><i class="icon-user abs tty"></i></label>
+              </div>
+              <div class="input-wrapper">
+                <button type="submit" class="btn-big btn-green">Відновити</button>
+              </div>
+
+            </form>
+          </div>
+          <div class="popup-close-bg"></div>
+        </div>
+      </div>
+    </div>
+
       <!-- jQuery -->
       <script src="js/jquery.min.js"></script>
 
@@ -421,6 +630,8 @@
       <script src="js/accaunt-offer-navigation.js"></script>
       <script src="js/office-offer-chebox.js"></script>
 
+      <!-- user-login JS -->
+      <script src="js/user-login.js"></script>
 
   </body>
 </html>
