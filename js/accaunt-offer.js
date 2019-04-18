@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".js-detals.js-detals-dont").click(function(){$(this).hasClass("js-detals-dont")&&$(".popup-details-dont").fadeIn()}),$(".popup-details-dont-close").click(function(){$(".popup-details-dont").fadeOut()}),$(".js-popup-newcat").click(function(){$(".popup-newcat").fadeIn()}),$(".popup-newcat-close").click(function(){$(".popup-newcat").fadeOut()})});

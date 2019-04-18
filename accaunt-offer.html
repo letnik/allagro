@@ -20,6 +20,8 @@
     <link rel="stylesheet" type="text/css" href="accaunt-offer.css">
     <link rel="stylesheet" type="text/css" href="main.css">
 
+    <link rel="stylesheet" type="text/css" href="popup-login.css">
+
 
   </head>
   <body id="home">
@@ -1100,7 +1102,7 @@
                     </ul>
                   </li>
 
-                  <li class="account-nav-item">
+                  <li class="account-nav-item active">
                     <a href="#" class="account-nav-link d-flex ai-center jc-between">
                       <span class="account-nav-name">Замороженні фрукти</span>
                       <span class="account-nav-quantity">77</span>
@@ -1348,7 +1350,7 @@
                   
 
 
-                  <li class="account-nav-item active">
+                  <li class="account-nav-item">
                     <a href="#" class="account-nav-link d-flex ai-center jc-between">
                       <span class="account-nav-name">Засоби захисту рослин</span>
                       <span class="account-nav-quantity">1109</span>
@@ -1356,6 +1358,7 @@
                   </li>
                 </ul>
               </nav>
+              <button class="btn btn-grey f-center account-nav-link js-popup-newcat"> Добавити категорію</button>
             </div>
           </section>
         </div>
@@ -1371,7 +1374,7 @@
                   <span>Щоб дізнатися подробиці, виберіть відповідне поле або натисніть на рядок з пропозицією яке вас цікавить</span>
                 </div>
                 <div class="account-bar-btn d-flex ai-center">
-                  <a href="#" class="btn btn-grey d-flex ai-center"> <i class="icon-info"></i><span>Показати деталі</span></a>
+                  <a href="#" class="btn btn-grey d-flex ai-center js-detals js-detals-dont"> <i class="icon-info"></i><span>Показати деталі</span></a>
                   <a href="#" class="btn btn-green d-flex ai-center"><i class="icon-plus"></i><span>Додати нову пропозицію</span></a>
                 </div>
               </div>
@@ -1460,7 +1463,7 @@
                   <a href="#" class="pagination-item next"><span class="icon-arrow-right"></span></a>
                 </div>
                 <div class="account-bar-btn d-flex ai-center">
-                  <a href="#" class="btn btn-grey d-flex ai-center"> <i class="icon-info"></i><span>Показати деталі</span></a>
+                  <a href="#" class="btn btn-grey d-flex ai-center js-detals js-detals-dont"> <i class="icon-info"></i><span>Показати деталі</span></a>
                   <a href="#" class="btn btn-green d-flex ai-center"><i class="icon-plus"></i><span>Додати нову пропозицію</span></a>
                 </div>
               </div>
@@ -1517,7 +1520,48 @@
       </div>
 
     </footer>
+    <div class="popup popup-details-dont">
+      <div class="popup-wrapper d-flex jc-center ai-center ai-start-sm">
+        <div class="popup-content">
+          <div class="popup-content-wrapper rel">
+            <i class="icon-close popup-details-dont-close abs"></i>
+            <div>
 
+              <div class="form-title centro">Помилка</div>
+              <p class="centro">Виберіть хоча б одну позицію із списку</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="popup-close-bg popup-details-dont-close"></div>
+      </div>
+    </div>
+
+    <div class="popup popup-newcat">
+      <div class="popup-wrapper d-flex jc-center ai-center ai-start-sm">
+        <div class="popup-content">
+          <div class="popup-content-wrapper rel">
+            <i class="icon-close popup-newcat-close abs"></i>
+            <form>
+
+              <h3 class="form-title centro">Добавити категорію</h3>
+              <p class="centro">Введіть назву гової категорії.</p>
+
+              <div class="input-wrapper rel">
+                <input type="text" name="name" placeholder="Нова назва" class="input" id="#">
+                <label for="send-login-pass"><i class="icon-user abs tty"></i></label>
+              </div>
+              <div class="input-wrapper">
+                <button type="submit" class="btn-big btn-green">Добавити</button>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+        <div class="popup-close-bg popup-newcat-close"></div>
+      </div>
+    </div>
       <!-- jQuery -->
       <script src="js/jquery.min.js"></script>
 
@@ -1531,6 +1575,8 @@
       <script src="js/modernizr.min.js"></script>
       <script src="js/accaunt-offer-navigation.js"></script>
       <script src="js/office-offer-chebox.js"></script>
+      <script src="js/user-login.js"></script>
+      <script src="js/accaunt-offer.js"></script>
 
 
   </body>
